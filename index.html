@@ -3,113 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <title>Test</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-
-    <title>Frontend Mentor | [Challenge Name Here]</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
-  <body>
-    <!-- Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More  -->
-    <main>
-      <section class="bg-warning py-5">
-        <div class="container-fluid">
-          <div class="row d-flex justify-content-center">
-            <!-- heading -->
+  <body class="mx-auto">
+    <!-- starts -->
+    <section class="wrap-bg container-fluid pb-3 position-relative">
+      <img src="./images/bg-top.svg" id="bg-img-top" alt="" />
+      <h2 class="text-center pt-5" style="color: #0f113bb2;">Our Pricing</h2>
+      <div class="col-xs-7 col-md-4 mx-auto d-flex justify-content-around py-4">
+        <div>Annually</div>
+        <div id="form">
+          <form action="">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </form>
+        </div>
+        <div>Monthly</div>
+      </div>
+      <div
+        class="container py-5 position-relative d-flex justify-content-center"
+      >
+        <div class="row justify-content-center">
+          <!-- basic -->
 
+          <div class="col-md-4 mb-5 text-center sm-px-3" id="master">
+            <p class="text-center">Basic</p>
             <div
-              class="col-lg-3 mx-auto mt-3 d-flex justify-content-around py-5"
+              class="d-flex align-items-center justify-content-center text-dark mb-3"
             >
-              <div>Annually</div>
-              <div id="form">
-                <form action="">
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <span class="slider round"></span>
-                  </label>
-                </form>
-              </div>
-              <div>Monthly</div>
-              <!-- end of heading -->
+              <span class="">&dollar;</span>
+              <h1 class="price">199.99</h1>
             </div>
-            <div class="col-lg-10 py-3">
-              <div class="row d-flex justify-content-center">
-                <div class="col-lg-3 bg-white text-center basic">
-                  <p class="text-center">Basic</p>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <span>&dollar;</span>
-                    <h1 class="price">199.99</h1>
-                  </div>
-                  <div class="card">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        500 GB Storage
-                      </li>
-                      <li class="list-group-item">2 Users Allowed</li>
-                      <li class="list-group-item mb-4">Send up to 3 GB</li>
-                    </ul>
-                    <a href="#" class="btn btn-cute">Learn More</a>
-                  </div>
-                </div>
-                <!-- professional -->
-                <div class="col-lg-3 text-center professional">
-                  <p class="text-center text-white">Professional</p>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <span class="text-white">&dollar;</span>
-                    <h1 class="price text-white">199.99</h1>
-                  </div>
-                  <div class="card" id="list-item">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item" id="list-item">
-                        500 GB Storage
-                      </li>
-                      <li class="list-group-item" id="list-item">
-                        2 Users Allowed
-                      </li>
-                      <li class="list-group-item mb-4" id="list-item">
-                        Send up to 3 GB
-                      </li>
-                    </ul>
-                  </div>
-                  <a href="#" class="btn-block btn btn-cute-1">Learn More</a>
-                </div>
-                <!-- master -->
-                <div class="col-lg-3 bg-white text-center master">
-                  <p class="text-center">Master</p>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <span>&dollar;</span>
-                    <h1 class="price">199.99</h1>
-                  </div>
-                  <div class="card">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">500 GB Storage</li>
-                      <li class="list-group-item">2 Users Allowed</li>
-                      <li class="list-group-item mb-4">Send up to 3 GB</li>
-                    </ul>
-                    <a href="#" class="btn btn-cute">Learn More</a>
-                  </div>
-                </div>
-              </div>
+            <div class="price-card text-dark">
+              <p>500 GB Storage</p>
+              <p>2 Users Allowed</p>
+              <p>Send up to 3 GB</p>
             </div>
+
+            <a href="#" class="btn-block btn btn-cute mt-4">Learn More</a>
+          </div>
+
+          <!-- professional -->
+
+          <div class="col-md-4 mb-5 text-center" id="prof">
+            <p class="text-center text-white">Professional</p>
+            <div class="d-flex align-items-center justify-content-center mb-3">
+              <span class="text-white">&dollar;</span>
+              <h1 class="price text-white">199.99</h1>
+            </div>
+            <div class="price-card">
+              <p>500 GB Storage</p>
+              <p>2 Users Allowed</p>
+              <p>Send up to 3 GB</p>
+            </div>
+
+            <a href="#" class="btn-block btn btn-cute-1 mt-4">Learn More</a>
+          </div>
+
+          <!-- master -->
+
+          <div class="col-md-4 mb-5 text-center" id="master">
+            <p class="text-center">Master</p>
+            <div
+              class="d-flex align-items-center justify-content-center text-dark mb-3"
+            >
+              <span class="">&dollar;</span>
+              <h1 class="price">199.99</h1>
+            </div>
+            <div class="price-card text-dark">
+              <p>500 GB Storage</p>
+              <p>2 Users Allowed</p>
+              <p>Send up to 3 GB</p>
+            </div>
+
+            <a href="#" class="btn-block btn btn-cute mt-4">Learn More</a>
           </div>
         </div>
-      </section>
-    </main>
-    <script src="./Js/jquery.js"></script>
-    <script src="./Js/popper.min.js"></script>
-    <!-- <script src="./Js/bootstrap.bundle.min.js"></script> -->
+      </div>
+      <img src="/images/bg-bottom.svg" id="bg-img-bottom" alt="" />
+    </section>
   </body>
 </html>
